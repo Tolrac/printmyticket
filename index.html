@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PrintMyTicket | Solution de billetterie en ligne pour tous vos événements</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" >
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />		
+	    <link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900' type='text/css' media='all' />
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.12.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Holder jQuery -->
+		<script src="js/holder.js"></script>
+		<!-- Custom jQuery -->
+		<script src="js/custom.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><div class="logo"></div></a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Clubbing</a></li>
+						<li><a href="#">Concert</a></li>
+						<li><a href="#">Festival</a></li>
+						<li><a href="#">Spectacle</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Expo</a></li>
+						<li><a href="#">Loisirs</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Mon compte</a></li>
+						<li><a href="#"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i> Panier</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<div class="container-fluid no-padding">
+			<div class="bg">
+				<div class="container bg-white">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<form class="event_search">
+								<div class="row">
+							        <div class="col-md-3">
+							            <div class="form-group">
+								            <label class="control-label" for="date_deb"><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Quoi ?</label>
+								            <select name="event_type" id="event_type" class="form-control">
+								                <option value="clubbing">Clubbing</option>
+								                <option value="concert">Concert</option>  
+								                <option value="festival">Festival</option>     
+								                <option value="spectacle">Spectacle</option>
+								                <option value="sport">Sport</option>   
+								                <option value="expo">Expo</option>
+								                <option value="loisirs">Loisirs</option>        
+								            </select>
+							          	</div>
+							        </div>
+							        <div class="col-md-3">
+							            <div class="form-group">
+									        <label class="control-label" for="date_deb"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> Quand ?</label>
+									        <select name="event_month" id="event_month" class="form-control">
+									            <option value="mai_2016">Mai 2016</option>
+									            <option value="juin_2016">Juin 2016</option>
+									            <option value="juillet_2016">Juillet 2016</option>
+									            <option value="aout_2016">Août 2016</option>
+									            <option value="septembre_2016">Septembre 2016</option>
+									            <option value="octobre_2016">Octobre 2016</option>
+									            <option value="novembre_2016">Novembre 2016</option>
+									            <option value="decembre_2016">Décembre 2016</option>
+									            <option value="janvier_2017">Janvier 2017</option>
+									            <option value="fevrier_2017">Février 2017</option>
+									            <option value="mars_2017">Mars 2017</option>
+									            <option value="avril_2017">Avril 2017</option>									            
+									        </select>
+								        </div>
+							        </div>
+							        <div class="col-md-3">
+							            <div class="form-group">
+							            	<label class="control-label" for="date_deb"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> Où ?</label>
+							            	<select name="event_province" id="event_province" class="form-control">
+							                	<option value="anvers">Anvers</option>
+							                	<option value="bruxelles-capitale">Bruxelles Capitale</option>   
+												<option value="brabant-flamand">Brabant Flamand</option>
+							                	<option value="flandre-occidentale">Flandre Occidentale</option>
+							                	<option value="flandre-orientale">Flandre Orientale</option>
+							                	<option value="hainaut">Hainaut</option>   
+												<option value="province-liege">Province de Liège</option>
+							                	<option value="province-limbourg">Province du Limbourg</option>
+							                	<option value="luxembourg">Luxembourg</option>
+							                	<option value="province-namur">Province de Namur</option>
+							                	<option value="brabant-wallon">Brabant Wallon</option> 						                	         
+							               	</select>
+							          	</div>
+							        </div>
+							        <div class="col-md-3">
+							        	<button type="submit" class="btn btn-info btn-large" id="event_search">Rechercher</button>
+							        </div>
+							    </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutter bg-blue">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="grid-block fading">
+				    	<div class="caption">
+				    		<div class="content">
+					            <h3 class="cTitle">Adele</h3>
+					            <p class="cDate">12 - 13 & 15 juin 2016</p>
+					            <p class="cPlace">Antwerps Sportpaleis</p>
+					            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+				           	</div>
+				        </div>
+						<img src="images/covers/adele.jpg" alt="cover">
+				    </div>
+					<div class="row no-gutter">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="grid-block fading">
+						    	<div class="caption">
+						    		<div class="content">
+							            <h3 class="cTitle">ZZ Top</h3>
+							            <p class="cDate">28 juin 2016</p>
+							            <p class="cPlace">Forest National</p>
+							            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+						           	</div>
+						        </div>
+								<img src="images/covers/zztop.jpg" alt="cover">
+						    </div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="grid-block fading">
+						    	<div class="caption">
+						    		<div class="content">
+							            <h3 class="cTitle">Seal</h3>
+							            <p class="cDate">08 juillet 2016</p>
+							            <p class="cPlace">Cirque Royal</p>
+							            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+						           	</div>
+						        </div>
+								<img src="images/covers/seal.jpg" alt="cover">
+						    </div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="grid-block fading">
+				    	<div class="caption">
+				    		<div class="content">
+					            <h3 class="cTitle">Couleur Café</h3>
+					            <p class="cDate">Du 1 juillet au 3 juillet 2016</p>
+					            <p class="cPlace">Tours & Taxi</p>
+					            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+				           	</div>
+				        </div>
+						<img src="images/covers/couleur_cafe.jpg" alt="cover">
+				    </div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="row no-gutter">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="grid-block fading">
+						    	<div class="caption">
+						    		<div class="content">
+							            <h3 class="cTitle">Maitre Gims</h3>
+							            <p class="cDate">Du 17 juillet au 9 décembre 2016</p>
+							            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+						           	</div>
+						        </div>
+								<img src="images/cover5.jpeg" alt="cover">
+						    </div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="grid-block fading">
+						    	<div class="caption">
+						    		<div class="content">
+							            <h3 class="cTitle">Nekfeu</h3>
+							            <p class="cDate">Du 11 août au 14 août 2016</p>
+							            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+						           	</div>
+						        </div>
+								<img src="images/cover6.jpeg" alt="cover">
+						    </div>
+						</div>
+					</div>	
+					<div class="grid-block fading">
+				    	<div class="caption">
+				    		<div class="content">
+					            <h3 class="cTitle">Frero Delavega</h3>
+					            <p class="cDate">11 Mars 2017</p>
+					            <p class="cPlace">Forest National</p>
+					            <p><button type="button" class="btn btn-cover">Réserver</button></p>
+				           	</div>
+				        </div>
+						<img src="images/cover7.jpeg" alt="cover">
+				    </div>			
+				</div>
+			</div>
+			<div class="row no-gutter bg-WB">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p class="iTitle">
+						PRINTMYTICKET
+					</p>
+					<p class="iSubTitle">
+						La solution de billetterie en ligne
+					</p>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div class="circle">
+						<div class="vhCenter bIcon">	
+							<i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+						</div>
+					</div> 
+					<div class="iText">Achat rapide et sécurisé</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div class="circle">
+						<div class="vhCenter bIcon">
+							<i class="glyphicon glyphicon-qrcode" artia-hidden="true"></i>
+						</div>
+					</div> 
+					<div class="iText">Paiement et impression de vos places</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div class="circle">
+						<div class="vhCenter bIcon">
+							<i class="glyphicon glyphicon-time" artia-hidden="true"></i>
+						</div>
+					</div> 				
+					<div class="iText">Moins d'attente à l'entrée</div>
+				</div>								
+			</div>
+			<div class="row no-gutter">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 catBg">
+					Agenda du mois
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>	
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>		
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img src="" data-src="holder.js/300x400?auto=yes" alt="">
+				</div>				
+			</div>								
+		</div>
+	</body>
+</html>

@@ -1,0 +1,262 @@
+img {
+    display: inline-block;
+    color: transparent;
+    height: auto;
+    font-size: 0;
+    vertical-align: middle;
+    /*max-width: 100%;*/
+    width: 100%;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimizeQuality;
+    -ms-interpolation-mode: bicubic;
+}
+
+.logo {
+    height: 73px;
+    width: 319px;
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;*/
+    background-image: url(../images/logo.png);
+}
+
+/* Navbar */
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #354458;
+    border-color: #354458;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #354458;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    /*background-color: #AA0000;*/
+    color: #3A9AD9;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #3A9AD9;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-text {
+    color: #FFF;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #AA0000;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #AA0000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 73px;
+    height: 73px;
+    padding-top: 0;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.glyphicon {
+    margin-right: 5px;
+}
+
+.container-fluid.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right:0;
+    padding-left:0;
+}
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Backgrounds */
+
+.bg {
+    height: 357px;
+    width: 100%;
+    background-image: url(../images/bg-concert.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.bg-white {
+    position: relative;
+    /*top: 125px;*/
+    padding: 10px 15px;
+    background-color: #E9E0D6;
+}
+
+.bg-WB {
+	height: 407px;
+	width: 100%;
+	background-image: url(../images/bg_WB.jpg);
+	background-repeat: repeat-x;
+}
+
+.bg-blue {
+	background-color: #354458;
+}
+
+/* Buttons */
+
+.btn-large {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 0;
+    background: #3A9AD9;
+}
+
+.btn-cover {
+    width: 125px;
+    padding: 8px;
+    background: #3A9AD9;
+}
+
+.btn-cover:hover {
+    background: transparent;
+    border: 1px solid #FFF;
+    color: #fff;
+}
+
+/* Featured */
+
+.grid-block.fading {
+    position: relative;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/trans-black-50.png);
+    text-align: center;
+    /*cursor: pointer;*/
+}
+
+.caption .content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.caption h3,
+.caption p {
+    color: #fff;
+    margin: 20px;
+}
+
+.caption p {
+    font-size: .75em;
+    line-height: 1.5em;
+    margin: 0 20px 15px;
+}
+
+h3.cTitle {
+    text-transform: uppercase;
+}
+
+p.cDate {
+    font-size: 15px;
+    color: #EB7260;
+}
+
+p.cPlace {
+	font-size: 15px;
+	color: #3A9AD9;
+}
+
+/* System infos */
+
+.iTitle {
+	padding-top: 25px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+.iSubTitle {
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+
+.circle { 
+	position: relative;
+    width: 124px;
+    height: 124px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+	background-color: #C5D4CC;
+	-moz-border-radius: 62px; 
+    -webkit-border-radius: 62px; 
+    border-radius: 62px;
+}
+
+.vhCenter {
+	position: absolute;
+	top: 41px;
+	left: 41px;
+}
+
+.bIcon {
+	color: #354458;
+	font-size: 	42px;
+}
+
+.iText {
+	margin-top: 30px;
+	font-size: 22px;
+	text-align: center;
+	color: #354458;
+}
+
+.catBg {
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	background-color: #354458;
+}
